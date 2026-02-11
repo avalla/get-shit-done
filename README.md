@@ -106,14 +106,41 @@ npx get-shit-done-cc --opencode --global # Install to ~/.config/opencode/
 # Gemini CLI
 npx get-shit-done-cc --gemini --global   # Install to ~/.gemini/
 
-# All runtimes
-npx get-shit-done-cc --all --global      # Install to all directories
+# MCP Server (Cursor, Claude Desktop, Windsurf, Zed)
+npx get-shit-done-cc --mcp --global      # Install MCP server globally
 ```
 
 Use `--global` (`-g`) or `--local` (`-l`) to skip the location prompt.
-Use `--claude`, `--opencode`, `--gemini`, or `--all` to skip the runtime prompt.
+Use `--claude`, `--opencode`, `--gemini`, `--mcp`, or `--all` to skip the runtime prompt.
 
 </details>
+
+### MCP Server
+
+GSD is also available as an [MCP (Model Context Protocol)](https://modelcontextprotocol.io) server, compatible with **Cursor**, **Claude Desktop**, **Windsurf**, **Zed**, and other MCP-enabled editors.
+
+**Installation:**
+
+```bash
+npx get-shit-done-cc --mcp --global
+```
+
+**Available Tools:**
+
+| Tool | Description |
+|------|-------------|
+| `gsd_new_project` | Initialize a new GSD project |
+| `gsd_plan_phase` | Plan a project phase |
+| `gsd_execute_phase` | Execute a phase |
+| `gsd_verify_work` | Verify completed work |
+| `gsd_discuss_phase` | Discuss implementation details |
+| `gsd_progress` | Show project status |
+| `gsd_quick` | Quick task execution |
+| `gsd_map_codebase` | Analyze existing codebase |
+| `gsd_new_milestone` | Start a new milestone |
+| `gsd_complete_milestone` | Complete the current milestone |
+
+See [mcp-server/README.md](mcp-server/README.md) for full configuration details.
 
 <details>
 <summary><strong>Development Installation</strong></summary>

@@ -467,4 +467,14 @@ Example config:
 - Read `.planning/STATE.md` for current context
 - Check `.planning/ROADMAP.md` for phase status
 - Run `/gsd:progress` to check where you're up to
+
+## MCP Server
+
+GSD is also available as an MCP (Model Context Protocol) server for **Cursor**, **Claude Desktop**, **Windsurf**, **Zed**, and other compatible editors.
+
+**Install:** `npx get-shit-done-cc --mcp --global`
+
+**Tools:** `gsd_new_project`, `gsd_plan_phase`, `gsd_execute_phase`, `gsd_verify_work`, `gsd_discuss_phase`, `gsd_progress`, `gsd_quick`, `gsd_map_codebase`, `gsd_new_milestone`, `gsd_complete_milestone`
+
+See `mcp-server/README.md` for configuration details.
 </reference>
